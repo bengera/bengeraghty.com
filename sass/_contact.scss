@@ -1,0 +1,160 @@
+.contact {
+    background-color: $color-dark-grey;
+    padding: 5rem 1rem;
+
+    @media only screen and (min-width: $bp-desktop) {
+        width: 100vw;
+    }
+
+    &__inner-container {
+        @media only screen and (min-width: $bp-tablet) {
+            width: 445px;
+            margin: 0 auto;
+
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            width: 1140px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+    }
+
+    &__left-content {
+        text-align: center;
+        margin-bottom: 50px;
+
+        @media only screen and (min-width: $bp-desktop) {
+          text-align: initial; 
+          margin-top: 32px; 
+        }
+    }
+
+    &__right-content {
+        @media only screen and (min-width: $bp-desktop) {
+            width: 445px;
+        }
+    }
+
+    &__heading {
+        font-size: 40px;
+        color: #FFF;
+        margin-bottom: 20px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            font-size: 72px;
+            padding-bottom: 1rem;
+
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            font-size: 88px;
+            margin-bottom: 36px;
+        }
+    }
+
+    &__rings {
+        position: absolute;
+        bottom: 10px;
+        lefT: -400px;
+
+        @media only screen and (min-width: $bp-desktop) {
+            lefT: -1055px;
+        }
+    }
+
+    &__description {
+        max-width: 343px;
+        margin: 0 auto;
+    }
+
+    
+    
+}
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control.error input {
+    border-bottom: 1px solid $color-red;
+}
+
+.form-control.success input {
+    border-color: $color-green;
+}
+
+
+input,
+textarea {
+    border: 0;
+    border-bottom: 1px solid $color-white;
+    color: $color-white;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+input {
+
+    height: 56px;
+    width: 100%;
+    font-size: 14px;
+    padding-left: 19.41px;
+
+
+}
+
+.form-button {
+    background-color: transparent;
+    border: 0;
+    max-width: none;
+    align-self: flex-end;
+    border-bottom: 2px solid $color-green;
+    margin-top: 32px;
+    padding-bottom: 1rem;
+
+
+}
+
+.error-message {
+    display: none;
+    text-align: right;
+    color: #FF6F5B;
+
+
+}
+
+.i-error {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+}
+
+textarea {
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    resize: none;
+
+
+
+
+}
+
+div.form-control:nth-child(3)>img:nth-child(3) {
+    top: 0;
+}

@@ -1,0 +1,80 @@
+// SECTION EXPERIENCE
+.experience {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    margin-bottom: 5rem;
+    position: relative;
+
+    @media only screen and (min-width: $bp-tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: none;
+
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 7.5rem;
+        gap: 65px;
+
+    }
+
+
+    &__item {
+        margin: 0 auto;
+        max-width: 170px;
+        text-align: center;
+        max-width: 75%;
+
+        @media only screen and (min-width: $bp-tablet) {
+            margin: 0;
+            max-width: none;
+            text-align: left;
+
+
+        }
+
+    }
+
+    &__skill {
+        font-size: 32px;
+        letter-spacing: -1px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #FFF;
+
+        @media only screen and (min-width: $bp-tablet) {
+            font-size: 48px;
+            margin-bottom: 30px;
+
+        }
+    }
+
+    &__time {
+        font-size: 16px;
+    }
+
+    &__rings {
+        position: absolute;
+        bottom: 0;
+        bottom: -47px;
+        left: 224px;
+
+        @media only screen and (min-width: $bp-tablet) {
+            bottom: 0%;
+            left: 74%;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            left: 87%;
+
+        }
+
+    }
+}

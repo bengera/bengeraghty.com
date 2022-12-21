@@ -57,3 +57,85 @@ main {
     margin: 0 auto;
     margin-top: 25px;
 }
+
+.h-xl {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    color: #FFF;
+}
+
+.h-l {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    color: #FFF;
+}
+
+.h-m {
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFF;
+
+}
+
+.body-text {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.cta {
+    text-transform: uppercase;
+    letter-spacing: 2.29px;
+    border-bottom: 2px solid $color-green;
+    max-width: 120px;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    color: #FFF;
+
+    @media only screen and (min-width: $bp-desktop) {
+         
+        &:hover {
+            color: $color-green;
+        }
+            
+    }
+}
+
+.cta-projects {
+
+    cursor: pointer;
+}
+
+.cta-projects-item {
+    max-width: none;
+}
+
+
+
+.cta-header {
+    margin: 0 auto;
+    margin-top: 24px;
+    cursor: pointer;
+
+    @media only screen and (min-width: $bp-tablet) {
+        grid-column: 1/1;
+        margin: 0;
+    }
+
+}
+
+
+
+svg {
+    cursor: pointer;
+    
+}
+
+svg:hover path {
+    @media only screen and (min-width: $bp-desktop) {
+        fill: #4EE1A0;     
+    }
+      
+}

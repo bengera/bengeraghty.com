@@ -1,0 +1,22 @@
+{
+  "name": "bengeraghty.com",
+  "version": "1.0.0",
+  "description": "Personal Portfolio - 2023",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bengera/bengeraghty.com.git"
+  },
+  "author": "Ben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bengera/bengeraghty.com/issues"
+  },
+  "homepage": "https://github.com/bengera/bengeraghty.com#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+    background-color: $color-dark-grey;
+    text-align: center;
+
+    @media only screen and (min-width: $bp-desktop) {
+             
+        
+      }
+
+    &__inner {
+        border-top: 2px solid $color-white;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+
+        @media only screen and (min-width: $bp-tablet) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        
+    }
+
+
+}
