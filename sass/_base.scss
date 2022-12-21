@@ -1,0 +1,59 @@
+$color-black: #151515;
+$color-dark-grey: #242424;
+$color-green: #4EE1A0;
+$color-grey: #D9D9D9;
+$color-white: #FFFF;
+$color-red: #FF6F5B;
+
+$font-primary: 'Space Grotesk',
+serif;
+
+$bp-tablet : 37.5em; //600
+$bp-desktop : 62.5em; //1000
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+$bp-tablet : 37.5em; //600
+$bp-desktop : 62.5em; //1000
+
+html {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+
+}
+
+body {
+
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: $font-primary;
+    background-color: $color-black;
+    color: $color-grey;
+
+
+
+
+}
+
+main {
+    padding: 1rem;
+}
+
+.master-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
