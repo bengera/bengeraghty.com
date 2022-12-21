@@ -93,7 +93,8 @@ main {
     padding-bottom: 0.5rem;
     cursor: pointer;
     color: #FFF;
-
+    transition: 0.3s;
+    
     @media only screen and (min-width: $bp-desktop) {
          
         &:hover {
@@ -131,11 +132,13 @@ main {
 svg {
     cursor: pointer;
     
+    
 }
 
 svg:hover path {
     @media only screen and (min-width: $bp-desktop) {
         fill: #4EE1A0;     
+        transition: 0.3s;
     }
       
 }

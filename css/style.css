@@ -361,7 +361,8 @@ main {
   text-decoration: none;
   padding-bottom: 0.5rem;
   cursor: pointer;
-  color: #FFF; }
+  color: #FFF;
+  transition: 0.3s; }
   @media only screen and (min-width: 62.5em) {
     .cta:hover {
       color: #4EE1A0; } }
@@ -386,7 +387,8 @@ svg {
 
 @media only screen and (min-width: 62.5em) {
   svg:hover path {
-    fill: #4EE1A0; } }
+    fill: #4EE1A0;
+    transition: 0.3s; } }
 
 .navigation {
   text-align: center;
@@ -488,7 +490,7 @@ svg {
         grid-row: 1 / 1;
         margin-bottom: 0;
         text-align: left;
-        font-size: 88px;
+        font-size: 87px;
         line-height: 88px;
         z-index: 200;
         max-width: none; } }
@@ -504,7 +506,7 @@ svg {
         grid-row: 1 / 1;
         margin-bottom: 0;
         text-align: left;
-        font-size: 72px;
+        font-size: 68px;
         line-height: 72px;
         z-index: 200;
         max-width: none; } }
