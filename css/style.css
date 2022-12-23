@@ -712,15 +712,17 @@ a.cta:nth-child(2) {
       display: flex;
       justify-content: space-between; } }
   .contact__left-content {
-    text-align: center;
-    margin-bottom: 50px; }
+    text-align: center; }
     @media only screen and (min-width: 62.5em) {
       .contact__left-content {
         text-align: initial;
         margin-top: 32px; } }
-  @media only screen and (min-width: 62.5em) {
-    .contact__right-content {
-      width: 445px; } }
+  .contact__right-content {
+    text-align: center;
+    margin-top: 4.5rem; }
+    @media only screen and (min-width: 62.5em) {
+      .contact__right-content {
+        width: 445px; } }
   .contact__heading {
     font-size: 40px;
     color: #FFF;
@@ -743,6 +745,19 @@ a.cta:nth-child(2) {
   .contact__description {
     max-width: 343px;
     margin: 0 auto; }
+  .contact__btn-contact {
+    text-transform: uppercase;
+    letter-spacing: 2.29px;
+    border: 2px solid #4EE1A0;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    transition: 0.3s;
+    background: none;
+    padding: 1rem 4rem; }
+    @media only screen and (min-width: 62.5em) {
+      .contact__btn-contact:hover {
+        color: #4EE1A0; } }
 
 .form {
   display: flex;

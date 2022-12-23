@@ -23,17 +23,22 @@
 
     &__left-content {
         text-align: center;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
 
         @media only screen and (min-width: $bp-desktop) {
           text-align: initial; 
           margin-top: 32px; 
+          
         }
     }
 
     &__right-content {
+        text-align: center;
+        margin-top: 4.5rem;
         @media only screen and (min-width: $bp-desktop) {
             width: 445px;
+            
+            
         }
     }
 
@@ -67,6 +72,29 @@
     &__description {
         max-width: 343px;
         margin: 0 auto;
+    }
+
+    &__btn-contact {
+        text-transform: uppercase;
+        letter-spacing: 2.29px;
+        border: 2px solid #4EE1A0;
+        text-decoration: none;
+        cursor: pointer;
+        color: #FFF;
+        transition: 0.3s;
+        background: none;
+        padding: 1rem 4rem;
+       
+
+        @media only screen and (min-width: $bp-desktop) {
+           
+           
+
+            &:hover {
+                color: $color-green;
+            }
+        }
+        
     }
 
     
@@ -158,3 +186,4 @@ textarea {
 div.form-control:nth-child(3)>img:nth-child(3) {
     top: 0;
 }
+
