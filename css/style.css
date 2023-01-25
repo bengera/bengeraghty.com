@@ -724,16 +724,16 @@ a.cta:nth-child(2) {
       .contact__right-content {
         width: 445px; } }
   .contact__heading {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #FFF;
     margin-bottom: 20px; }
     @media only screen and (min-width: 37.5em) {
       .contact__heading {
-        font-size: 72px;
+        font-size: 4.5rem;
         padding-bottom: 1rem; } }
     @media only screen and (min-width: 62.5em) {
       .contact__heading {
-        font-size: 88px;
+        font-size: 5.5rem;
         margin-bottom: 36px; } }
   .contact__rings {
     position: absolute;

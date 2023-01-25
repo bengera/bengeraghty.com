@@ -43,18 +43,18 @@
     }
 
     &__heading {
-        font-size: 40px;
+        font-size: 2.5rem;
         color: #FFF;
         margin-bottom: 20px;
 
         @media only screen and (min-width: $bp-tablet) {
-            font-size: 72px;
+            font-size: 4.5rem;
             padding-bottom: 1rem;
 
         }
 
         @media only screen and (min-width: $bp-desktop) {
-            font-size: 88px;
+            font-size: 5.5rem;
             margin-bottom: 36px;
         }
     }
