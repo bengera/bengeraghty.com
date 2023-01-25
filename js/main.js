@@ -10,35 +10,35 @@ form.addEventListener('submit', (e) => {
     checkInputs();
 });
 
-function checkInputs() {
-    const nameValue = name.value.trim();
-    const emailValue = email.value.trim();
-    const messageValue = message.value.trim();
+// function checkInputs() {
+//     const nameValue = name.value.trim();
+//     const emailValue = email.value.trim();
+//     const messageValue = message.value.trim();
 
-    if (nameValue === '') {
-        setErrorFor(name, 'Name cannot be empty');
-    } else {
-        setSuccessFor(name);
-    }
+//     if (nameValue === '') {
+//         setErrorFor(name, 'Name cannot be empty');
+//     } else {
+//         setSuccessFor(name);
+//     }
 
-    if (emailValue === '') {
-        setErrorFor(email, 'Email cannot be empty')
-    } else if (!isEmail(emailValue)) {
-        setErrorFor(email, 'Sorry, invalid format here');
-    } else {
-        setSuccessFor(email)
-    }
+//     if (emailValue === '') {
+//         setErrorFor(email, 'Email cannot be empty')
+//     } else if (!isEmail(emailValue)) {
+//         setErrorFor(email, 'Sorry, invalid format here');
+//     } else {
+//         setSuccessFor(email)
+//     }
 
-    if (messageValue === '') {
-        setErrorFor(message, 'Message cannot be empty')
-    } else {
-        setSuccessFor(message);
-    }
+//     if (messageValue === '') {
+//         setErrorFor(message, 'Message cannot be empty')
+//     } else {
+//         setSuccessFor(message);
+//     }
 
-}
+// }
 
 // FORM VALIDATION MESSAGES
-
+/*
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const errorMessage = formControl.querySelector('.error-message');
@@ -62,6 +62,7 @@ function setSuccessFor(input) {
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+*/
 
 // WINDOW RESIZING H1 
 window.addEventListener('resize', resize);
