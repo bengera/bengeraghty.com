@@ -59,28 +59,28 @@ main {
 }
 
 .h-xl {
-    font-size: 88px;
+    font-size: 5.5rem;
     line-height: 88px;
     letter-spacing: -2.5px;
     color: #FFF;
 }
 
 .h-l {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 56px;
     letter-spacing: -1.5px;
     color: #FFF;
 }
 
 .h-m {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 32px;
     color: #FFF;
 
 }
 
 .body-text {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
 }
 
@@ -123,6 +123,7 @@ main {
     @media only screen and (min-width: $bp-tablet) {
         grid-column: 1/1;
         margin: 0;
+        align-self: center;
     }
 
 }
