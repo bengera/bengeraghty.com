@@ -1,149 +1,153 @@
 .projects {
+  &__heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.13636px;
+    color: #fff;
+    font-size: clamp(2.5rem, 8vw, 88px);
+  }
 
-    &__heading {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 40px;
-        letter-spacing: -1.13636px;
-        color: #FFF;
-        font-size: clamp(2.5rem, 8vw, 88px);
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin-bottom: 80px;
     }
-
-    &__top {
-        display: flex;
-        justify-content: space-between;
-
-        @media only screen and (min-width: $bp-desktop) {
-            margin-bottom: 80px;
-
-        }
-    }
+  }
 }
 
 // PROJECTS - GALLERY
 
-.gallery {
-    margin-top: 40px;
+.gallery,
+.gallery-2 {
+  margin-top: 40px;
 
-    @media only screen and (min-width: $bp-tablet) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+  @media only screen and (min-width: $bp-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 
+  &__profile-pic {
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    @media only screen and (min-width: $bp-desktop) {
+      position: relative;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__image-overlay {
+    @media only screen and (min-width: $bp-desktop) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: calc(100% - 90px);
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: RGBA(0, 0, 0, 0.7);
+      cursor: pointer;
     }
 
-    &__profile-pic {
-        width: 100%;
+    &:hover {
+      opacity: 1;
     }
+  }
 
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+  }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin: 0 auto;
-        margin-bottom: 40px;
+  &__list-languages {
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+  }
 
-        @media only screen and (min-width: $bp-desktop) {
-            position: relative;
-        }
+  &__links {
+    display: flex;
 
+    @media only screen and (min-width: $bp-desktop) {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      left: 42%;
+      top: 31%;
+      gap: 2rem;
     }
+  }
 
-    &__img {
-        width: 100%;
-        margin-bottom: 10px;
+  &__image-overlay-container {
+    @media only screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      gap: 1rem;
     }
+  }
 
-    &__image-overlay {
+  &__btn-show-more {
+    color: $color-white;
+    border:0;
+    text-transform: uppercase;
+    letter-spacing: 2.29px;
+    border-bottom: 2px solid #4ee1a0;
+    max-width: 150px;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+    background: transparent;
+    padding-bottom: 1rem;
 
-        @media only screen and (min-width: $bp-desktop) {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: calc(100% - 90px);
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: RGBA(0, 0, 0, 0.7);
-            cursor: pointer;
-
-        }
-
-        &:hover {
-            opacity: 1;
-        }
+    &:hover {
+        color: #4ee1a0;
     }
-
-    &__title {
-        font-size: 24px;
-        text-transform: uppercase;
-        color: #FFF;
-
-    }
-
-    &__list-languages {
-        font-size: 18px;
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        text-transform: uppercase;
-    }
-
-    &__links {
-        display: flex;
-
-        @media only screen and (min-width: $bp-desktop) {
-            display: none;
-            position: absolute;
-            flex-direction: column;
-            left: 42%;
-            top: 31%;
-            gap: 2rem;
-
-
-
-        }
-
-
-    }
-
-    &__image-overlay-container {
-        @media only screen and (min-width: $bp-desktop) {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 40%;
-            left: 40%;
-            gap: 1rem;
-
-        }
-    }
-
-
-
-
-
-
+  }
 }
 
 a.cta:nth-child(2) {
-    margin-left: 2rem;
-    @media only screen and (min-width: $bp-desktop) {
-       margin: 0;
-       text-align: center;
-
-    }
+  margin-left: 2rem;
+  @media only screen and (min-width: $bp-desktop) {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .cta.cta-projects-item.link-overlay {
-    display: none;
+  display: none;
 
-    @media only screen and (min-width: $bp-desktop) {
-      display: block; 
-
-    }
+  @media only screen and (min-width: $bp-desktop) {
+    display: block;
+  }
 }
 
+.gallery-2 {
+  display: none;
+  
+  
+}

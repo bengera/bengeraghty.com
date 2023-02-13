@@ -4,11 +4,47 @@ const email = document.getElementById('email');
 const message = document.getElementById('message');
 const error = document.querySelector('error-message');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    console.log('submitted');
-    checkInputs();
-});
+
+// WINDOW RESIZING H1 
+window.addEventListener('resize', resize);
+
+function resize() {
+    const spanH1 = document.querySelector('.header__heading');
+    if (window.innerWidth > 1000) {
+    spanH1.setAttribute("style", "display:none");   
+        
+    } else if (window.innerWidth < 1000) {
+        spanH1.setAttribute("style", "display:block");  
+    }
+
+}
+
+// Show more of Gallery
+const secondGallery = document.getElementById('second-gallery');
+const showMoreBtn = document.getElementById('show-more');
+
+showMoreBtn.addEventListener('click', ()=> {
+    console.log('show more of gallery');
+    if (secondGallery.style.display === "none" || secondGallery.style.display === "") {
+        secondGallery.style.display = "grid";
+        showMoreBtn.textContent = "Show less...";
+
+        secondGallery.style.height = 0;
+        
+    } else {
+        secondGallery.style.display = "none";
+        showMoreBtn.textContent = "Show more..."
+    }
+    
+})
+
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     console.log('submitted');
+//     checkInputs();
+// });
+
+
 
 // function checkInputs() {
 //     const nameValue = name.value.trim();
@@ -63,21 +99,6 @@ function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 */
-
-// WINDOW RESIZING H1 
-window.addEventListener('resize', resize);
-
-function resize() {
-    const spanH1 = document.querySelector('.header__heading');
-    if (window.innerWidth > 1000) {
-    spanH1.setAttribute("style", "display:none");   
-        
-    } else if (window.innerWidth < 1000) {
-        spanH1.setAttribute("style", "display:block");  
-    }
-
-}
-
 
 
 
