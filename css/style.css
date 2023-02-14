@@ -729,6 +729,9 @@ a.cta:nth-child(2) {
 
 .gallery-2 {
   display: none; }
+  .gallery-2__item {
+    transition: all 0.3s ease-in-out;
+    opacity: 0; }
 
 .contact {
   background-color: #242424;

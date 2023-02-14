@@ -111,7 +111,7 @@
 
   &__btn-show-more {
     color: $color-white;
-    border:0;
+    border: 0;
     text-transform: uppercase;
     letter-spacing: 2.29px;
     border-bottom: 2px solid #4ee1a0;
@@ -125,7 +125,7 @@
     padding-bottom: 1rem;
 
     &:hover {
-        color: #4ee1a0;
+      color: #4ee1a0;
     }
   }
 }
@@ -148,6 +148,11 @@ a.cta:nth-child(2) {
 
 .gallery-2 {
   display: none;
-  
-  
+    
+
+  &__item {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+
+  }
 }

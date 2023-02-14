@@ -1,10 +1,3 @@
-const form = document.getElementById('form');
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
-const error = document.querySelector('error-message');
-
-
 // WINDOW RESIZING H1 
 window.addEventListener('resize', resize);
 
@@ -20,23 +13,36 @@ function resize() {
 }
 
 // Show more of Gallery
+
 const secondGallery = document.getElementById('second-gallery');
 const showMoreBtn = document.getElementById('show-more');
+const galleryItems = document.querySelectorAll('.gallery-2, .gallery__item');
 
 showMoreBtn.addEventListener('click', ()=> {
     console.log('show more of gallery');
     if (secondGallery.style.display === "none" || secondGallery.style.display === "") {
         secondGallery.style.display = "grid";
         showMoreBtn.textContent = "Show less...";
-
-        secondGallery.style.height = 0;
+       
         
+               
     } else {
+        
+
         secondGallery.style.display = "none";
         showMoreBtn.textContent = "Show more..."
     }
     
 })
+
+
+
+// const form = document.getElementById('form');
+// const name = document.getElementById('name');
+// const email = document.getElementById('email');
+// const message = document.getElementById('message');
+// const error = document.querySelector('error-message');
+
 
 // form.addEventListener('submit', (e) => {
 //     e.preventDefault();
