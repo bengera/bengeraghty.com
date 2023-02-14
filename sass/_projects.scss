@@ -149,11 +149,15 @@ a.cta:nth-child(2) {
 
 .gallery-2 {
   display: none;
-    
 
   &__item {
     transition: all 0.3s ease-in-out;
     opacity: 0;
-
   }
+}
+
+.btn-fem {
+  paddin-bottom: 4rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
 }
