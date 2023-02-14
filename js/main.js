@@ -12,7 +12,7 @@ function resize() {
 
 }
 
-// Show more of Gallery
+// Show more of Gallery pictures
 
 const secondGallery = document.getElementById('second-gallery');
 const showMoreBtn = document.getElementById('show-more');
