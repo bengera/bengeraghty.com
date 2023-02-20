@@ -126,7 +126,10 @@
     padding-bottom: 1rem;
 
     &:hover {
-      color: #4ee1a0;
+      @media only screen and (min-width: $bp-desktop) {
+        color: #4ee1a0;
+      }
+      
     }
   }
 }
@@ -167,6 +170,13 @@ a.cta:nth-child(2) {
   color: #fff;
   transition: 0.3s;
   padding-bottom: 1rem;
+
+  @media only screen and (min-width: $bp-desktop) {
+    &:hover{
+      color: #4ee1a0;
+    }
+    
+  }
   
 }
 

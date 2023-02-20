@@ -75,21 +75,17 @@
 
     @media only screen and (min-width: $bp-tablet) {
       display: block;
-      // grid-template-columns: 2fr 1fr 1fr;
-      // grid-template-rows: min-content min-content min-content;
-      // margin-top: 40px;
-      // grid-column: 2/2;
       max-width: none;
       min-width: none;
       padding-bottom: 5rem;
-      // background-position: -340px 50px, 110% 100%;
+      
     }
 
     @media only screen and (min-width: $bp-desktop) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: none;
       position: relative;
-      //   padding-bottom: 10rem;
+      
       background-image: none;
     }
   }
@@ -104,10 +100,8 @@
       margin-left: 2rem;
       grid-column: 1/3;
       margin-right: 2rem;
-      // margin-top: 7rem;
       word-break: break-word;
-      //   max-width: 798px;
-      //   border: 2px solid red;
+      
     }
 
     @media only screen and (min-width: $bp-desktop) {
@@ -127,7 +121,6 @@
       margin-bottom: 40px;
       grid-row: 1 / 1;
       margin-bottom: 0;
-      //   text-align: left;
       text-align: center;
       font-size: 87px;
       line-height: 88px;
@@ -147,11 +140,9 @@
     @media only screen and (min-width: $bp-tablet) {
       grid-row: 1 / 1;
       margin-bottom: 0;
-      //   text-align: left;
       font-size: 68px;
       line-height: 72px;
       z-index: 200;
-      //   max-width: none;
       text-align: center;
       max-width: 504px;
     }
@@ -165,7 +156,7 @@
     max-width: 635px;
     line-height: 25.7px;
     font-size: clamp(16px, 4vw, 32px);
-    line-height: 31.8px;
+    line-height: 36.8px;
     min-width: 325px;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -176,7 +167,7 @@
       text-align: center;
       margin: 0;
       align-self: center;
-      //   margin-top: 60px;
+      
     }
 
     @media only screen and (min-width: $bp-desktop) {

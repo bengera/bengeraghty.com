@@ -514,7 +514,7 @@ svg {
     max-width: 635px;
     line-height: 25.7px;
     font-size: clamp(16px, 4vw, 32px);
-    line-height: 31.8px;
+    line-height: 36.8px;
     min-width: 325px;
     margin: 0 auto;
     margin-bottom: 2rem; }
@@ -711,9 +711,10 @@ svg {
     transition: 0.3s;
     background: transparent;
     padding-bottom: 1rem; }
-    .gallery__btn-show-more:hover,
-    .gallery-2__btn-show-more:hover {
-      color: #4ee1a0; }
+    @media only screen and (min-width: 62.5em) {
+      .gallery__btn-show-more:hover,
+      .gallery-2__btn-show-more:hover {
+        color: #4ee1a0; } }
 
 a.cta:nth-child(2) {
   margin-left: 2rem; }
@@ -745,6 +746,9 @@ a.cta:nth-child(2) {
   color: #fff;
   transition: 0.3s;
   padding-bottom: 1rem; }
+  @media only screen and (min-width: 62.5em) {
+    .btn-fem:hover {
+      color: #4ee1a0; } }
 
 .buttons-container {
   display: flex;
