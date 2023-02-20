@@ -374,8 +374,7 @@ main {
   max-width: none; }
 
 .cta-header {
-  margin: 0 auto;
-  margin-top: 24px;
+  margin: 0;
   cursor: pointer; }
   @media only screen and (min-width: 37.5em) {
     .cta-header {

@@ -116,8 +116,9 @@ main {
 
 
 .cta-header {
-    margin: 0 auto;
-    margin-top: 24px;
+    // margin: 0 auto;
+    margin: 0;
+    // margin-top: 24px;
     cursor: pointer;
 
     @media only screen and (min-width: $bp-tablet) {
