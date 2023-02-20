@@ -735,9 +735,24 @@ a.cta:nth-child(2) {
     opacity: 0; }
 
 .btn-fem {
-  paddin-bottom: 4rem;
-  padding-bottom: 1rem;
-  margin-left: 1rem; }
+  text-transform: uppercase;
+  letter-spacing: 2.29px;
+  border-bottom: 2px solid #4ee1a0;
+  max-width: 320px;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+  padding-bottom: 1rem; }
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; }
+  @media only screen and (min-width: 62.5em) {
+    .buttons-container {
+      flex-direction: row; } }
 
 .contact {
   background-color: #242424;
