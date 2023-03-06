@@ -160,6 +160,7 @@
     min-width: 325px;
     margin: 0 auto;
     margin-bottom: 2rem;
+    padding: 0 1rem;
 
     @media only screen and (min-width: $bp-tablet) {
       grid-row: 2 / 2;
