@@ -1,146 +1,123 @@
 $color-black: #151515;
 $color-dark-grey: #242424;
-$color-green: #4EE1A0;
-$color-grey: #D9D9D9;
-$color-white: #FFFF;
-$color-red: #FF6F5B;
+$color-green: #4ee1a0;
+$color-grey: #d9d9d9;
+$color-white: #ffff;
+$color-red: #ff6f5b;
 
-$font-primary: 'Space Grotesk',
-serif;
+$font-primary: "Space Grotesk", serif;
 
-$bp-tablet : 37.5em; //600
-$bp-desktop : 62.5em; //1000
-
-
+$bp-tablet: 37.5em; //600
+$bp-desktop: 62.5em; //1000
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-$bp-tablet : 37.5em; //600
-$bp-desktop : 62.5em; //1000
+$bp-tablet: 37.5em; //600
+$bp-desktop: 62.5em; //1000
 
 html {
-
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-
-
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-
-    font-size: 16px;
-    line-height: 26px;
-    margin: 0 auto;
-    overflow-x: hidden;
-    font-family: $font-primary;
-    background-color: $color-black;
-    color: $color-grey;
-
-
-
-
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: $font-primary;
+  background-color: $color-black;
+  color: $color-grey;
 }
 
 main {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .master-container {
-    max-width: 1140px;
-    margin: 0 auto;
-    margin-top: 25px;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
 .h-xl {
-    font-size: 5.5rem;
-    line-height: 88px;
-    letter-spacing: -2.5px;
-    color: #FFF;
+  font-size: 5.5rem;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+  color: #fff;
 }
 
 .h-l {
-    font-size: 3rem;
-    line-height: 56px;
-    letter-spacing: -1.5px;
-    color: #FFF;
+  font-size: 3rem;
+  line-height: 56px;
+  letter-spacing: -1.5px;
+  color: #fff;
 }
 
 .h-m {
-    font-size: 1.5rem;
-    line-height: 32px;
-    color: #FFF;
-
+  font-size: 1.5rem;
+  line-height: 32px;
+  color: #fff;
 }
 
 .body-text {
-    font-size: 1.125rem;
-    line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 28px;
 }
 
 .cta {
-    text-transform: uppercase;
-    letter-spacing: 2.29px;
-    border-bottom: 2px solid $color-green;
-    max-width: 120px;
-    text-decoration: none;
-    padding-bottom: 0.5rem;
-    cursor: pointer;
-    color: #FFF;
-    transition: 0.3s;
-    
-    @media only screen and (min-width: $bp-desktop) {
-         
-        &:hover {
-            color: $color-green;
-        }
-            
+  text-transform: uppercase;
+  letter-spacing: 2.29px;
+  border-bottom: 2px solid $color-green;
+  max-width: 120px;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+
+  @media only screen and (min-width: $bp-desktop) {
+    &:hover {
+      color: $color-green;
     }
+  }
 }
 
 .cta-projects {
-
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .cta-projects-item {
-    max-width: none;
+  max-width: none;
 }
-
-
 
 .cta-header {
-    // margin: 0 auto;
+  // margin: 0 auto;
+  margin: 0;
+  // margin-top: 24px;
+  cursor: pointer;
+
+  @media only screen and (min-width: $bp-tablet) {
+    grid-column: 1/1;
     margin: 0;
-    // margin-top: 24px;
-    cursor: pointer;
-
-    @media only screen and (min-width: $bp-tablet) {
-        grid-column: 1/1;
-        margin: 0;
-        align-self: center;
-    }
-
+    align-self: center;
+  }
 }
 
-
-
 svg {
-    cursor: pointer;
-    
-    
+  cursor: pointer;
 }
 
 svg:hover path {
-    @media only screen and (min-width: $bp-desktop) {
-        fill: #4EE1A0;     
-        transition: 0.3s;
-    }
-      
+  @media only screen and (min-width: $bp-desktop) {
+    fill: #4ee1a0;
+    transition: 0.3s;
+  }
 }
