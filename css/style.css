@@ -322,7 +322,7 @@ body {
   overflow-x: hidden;
   font-family: "Space Grotesk", serif;
   background-color: #151515;
-  color: #D9D9D9; }
+  color: #d9d9d9; }
 
 main {
   padding: 1rem; }
@@ -336,18 +336,18 @@ main {
   font-size: 5.5rem;
   line-height: 88px;
   letter-spacing: -2.5px;
-  color: #FFF; }
+  color: #fff; }
 
 .h-l {
   font-size: 3rem;
   line-height: 56px;
   letter-spacing: -1.5px;
-  color: #FFF; }
+  color: #fff; }
 
 .h-m {
   font-size: 1.5rem;
   line-height: 32px;
-  color: #FFF; }
+  color: #fff; }
 
 .body-text {
   font-size: 1.125rem;
@@ -356,16 +356,16 @@ main {
 .cta {
   text-transform: uppercase;
   letter-spacing: 2.29px;
-  border-bottom: 2px solid #4EE1A0;
+  border-bottom: 2px solid #4ee1a0;
   max-width: 120px;
   text-decoration: none;
   padding-bottom: 0.5rem;
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   transition: 0.3s; }
   @media only screen and (min-width: 62.5em) {
     .cta:hover {
-      color: #4EE1A0; } }
+      color: #4ee1a0; } }
 
 .cta-projects {
   cursor: pointer; }
@@ -387,7 +387,7 @@ svg {
 
 @media only screen and (min-width: 62.5em) {
   svg:hover path {
-    fill: #4EE1A0;
+    fill: #4ee1a0;
     transition: 0.3s; } }
 
 .navigation {
@@ -532,7 +532,7 @@ svg {
 .underline {
   text-decoration: underline;
   text-decoration-thickness: 4px;
-  text-decoration-color: #4EE1A0;
+  text-decoration-color: #4ee1a0;
   text-underline-offset: 12px; }
 
 @media only screen and (min-width: 37.5em) {
@@ -698,7 +698,7 @@ svg {
       gap: 1rem; } }
   .gallery__btn-show-more,
   .gallery-2__btn-show-more {
-    color: #FFFF;
+    color: #ffff;
     border: 0;
     text-transform: uppercase;
     letter-spacing: 2.29px;
@@ -819,7 +819,7 @@ a.cta:nth-child(2) {
     padding: 1rem 4rem; }
     @media only screen and (min-width: 62.5em) {
       .contact__btn-contact:hover {
-        color: #4EE1A0; } }
+        color: #4ee1a0; } }
 
 .form {
   display: flex;
@@ -831,16 +831,16 @@ a.cta:nth-child(2) {
   position: relative; }
 
 .form-control.error input {
-  border-bottom: 1px solid #FF6F5B; }
+  border-bottom: 1px solid #ff6f5b; }
 
 .form-control.success input {
-  border-color: #4EE1A0; }
+  border-color: #4ee1a0; }
 
 input,
 textarea {
   border: 0;
-  border-bottom: 1px solid #FFFF;
-  color: #FFFF;
+  border-bottom: 1px solid #ffff;
+  color: #ffff;
   background-color: transparent;
   text-transform: uppercase;
   width: 100%; }
@@ -856,7 +856,7 @@ input {
   border: 0;
   max-width: none;
   align-self: flex-end;
-  border-bottom: 2px solid #4EE1A0;
+  border-bottom: 2px solid #4ee1a0;
   margin-top: 32px;
   padding-bottom: 1rem; }
 
@@ -885,7 +885,7 @@ div.form-control:nth-child(3) > img:nth-child(3) {
   background-color: #242424;
   text-align: center; }
   .footer__inner {
-    border-top: 2px solid #FFFF;
+    border-top: 2px solid #ffff;
     width: 90%;
     margin: 0 auto;
     padding-top: 3rem;
