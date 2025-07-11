@@ -4,7 +4,7 @@
   "description": "Personal Portfolio - 2023",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass sass/main.scss css/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/bengera/bengeraghty.com#readme",
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "sass": "^1.89.2"
   }
 }
