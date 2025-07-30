@@ -113,11 +113,14 @@ main {
 
 svg {
   cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 
-svg:hover path {
-  @media only screen and (min-width: $bp-desktop) {
-    fill: #4ee1a0;
-    transition: 0.3s;
+@media only screen and (min-width: $bp-desktop) {
+  svg:hover {
+    fill: #fff;
+    transition: opacity 0.3s, fill 0.3s;
+    opacity: 1;
   }
 }
