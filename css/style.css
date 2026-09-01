@@ -692,10 +692,6 @@ svg {
   }
 }
 
-div.experience__item:nth-child(4) {
-  grid-column: 2/2;
-}
-
 .projects {
   padding-bottom: 5rem;
 }
